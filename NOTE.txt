@@ -2,4 +2,27 @@ venv>
 
 > pip install wagtail
 > wagtail start mysite .
-> 
+- updated requirements.txt
+> pip freeze > requirements
+- creating database
+> python manage.py migrate
+- create superuser
+> python manage.py createsuperuser
+admin-admin@example.com-1
+> python manage.py runserver
+
+- following the documentation:
+- adding a body field to the default HomePage model in home/models.py
+- this model is empty at first
+- RichTextField is wagtail specific and useful for later
+- adding fields to content_panels enables them to be edited in admin panel
+> python manage.py makemigrations
+> python manage.py migrate
+
+- now, go to the admin page> pages> and Home
+> select it and change the body field of it to 'welcome to our site', and publish it (look down)
+> then edit the  home/templates/home/home_page.html
+> back to admin interface, select Home
+> upper-right corner, there is button called 'LIVE' click on it, and you will see new edited homepage
+- instead of wagtail installation succesful page
+- commit
