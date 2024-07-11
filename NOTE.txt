@@ -26,3 +26,11 @@ admin-admin@example.com-1
 > upper-right corner, there is button called 'LIVE' click on it, and you will see new edited homepage
 - instead of wagtail installation succesful page
 - commit
+
+
+
+- now to create a blog app:
+> python manage.py startapp blog
+- and then add it to installed_apps in mysite/settings/base.py
+- (just add "blog" to installed_apps, to top of it)
+- 
