@@ -1,0 +1,5 @@
+venv>
+
+> pip install wagtail
+> wagtail start mysite .
+> 
